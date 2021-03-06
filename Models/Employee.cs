@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AkwadTask.Models
+namespace AkwadApiTask.Models
 {
     public class Employee
     {
