@@ -24,6 +24,7 @@ namespace AkwadApiTask.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
             return await _context.Employees.ToListAsync();
         }
 
